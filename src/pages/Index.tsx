@@ -76,7 +76,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold tracking-tight text-primary">Atelier Premium</h1>
+            <h1 className="text-2xl font-bold tracking-tight text-primary">Точный крой</h1>
             <div className="flex gap-6">
               <button
                 onClick={() => setActiveSection('home')}
@@ -119,16 +119,16 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
             </div>
             <div className="relative z-10 container mx-auto px-4 text-center">
-              <h2 className="text-6xl md:text-7xl font-bold text-secondary mb-6 animate-scale-in">
+              <h2 className="text-6xl md:text-7xl font-bold text-white mb-6 animate-scale-in">
                 Мастерство и элегантность
               </h2>
-              <p className="text-xl md:text-2xl text-secondary/90 mb-8 max-w-2xl mx-auto font-light">
+              <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto font-light">
                 Создаём изделия премиум-класса с учётом ваших индивидуальных особенностей
               </p>
               <Button
                 size="lg"
                 onClick={() => setActiveSection('calculator')}
-                className="bg-accent text-primary hover:bg-accent/90 text-lg px-8 py-6"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6"
               >
                 Рассчитать стоимость
               </Button>
@@ -189,7 +189,7 @@ const Index = () => {
                   <h3 className="text-4xl font-bold mb-6">Процесс работы</h3>
                   <div className="space-y-6">
                     <div className="flex gap-4">
-                      <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-primary font-bold">
+                      <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-accent-foreground font-bold">
                         1
                       </div>
                       <div>
@@ -200,7 +200,7 @@ const Index = () => {
                       </div>
                     </div>
                     <div className="flex gap-4">
-                      <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-primary font-bold">
+                      <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-accent-foreground font-bold">
                         2
                       </div>
                       <div>
@@ -211,7 +211,7 @@ const Index = () => {
                       </div>
                     </div>
                     <div className="flex gap-4">
-                      <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-primary font-bold">
+                      <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-accent-foreground font-bold">
                         3
                       </div>
                       <div>
@@ -259,7 +259,7 @@ const Index = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h4 className="text-secondary text-xl font-semibold">{item.title}</h4>
+                      <h4 className="text-white text-xl font-semibold">{item.title}</h4>
                     </div>
                   </div>
                 </div>
@@ -285,7 +285,7 @@ const Index = () => {
                       "Заказывала свадебное платье. Результат превзошёл все ожидания! Мастера учли каждую деталь, платье сидело идеально. Спасибо за мой особенный день!"
                     </p>
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-primary font-semibold">
+                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent-foreground font-semibold">
                         АС
                       </div>
                       <div>
@@ -307,7 +307,7 @@ const Index = () => {
                       "Пошив костюма-тройки из кашемира. Качество работы на высшем уровне, посадка безупречная. Онлайн-калькулятор помог сразу понять стоимость. Рекомендую!"
                     </p>
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-primary font-semibold">
+                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent-foreground font-semibold">
                         ДП
                       </div>
                       <div>
@@ -329,7 +329,7 @@ const Index = () => {
                       "Заказала пальто на осень. Очень удобно, что можно оформить заявку онлайн. Ткань шикарная, работа выполнена аккуратно. Уже планирую следующий заказ!"
                     </p>
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-primary font-semibold">
+                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent-foreground font-semibold">
                         ЕВ
                       </div>
                       <div>
@@ -413,7 +413,7 @@ const Index = () => {
                   <Button
                     onClick={calculatePrice}
                     disabled={!selectedGarment || !selectedFabric}
-                    className="w-full bg-accent text-primary hover:bg-accent/90"
+                    className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
                     size="lg"
                   >
                     Рассчитать стоимость
@@ -437,7 +437,7 @@ const Index = () => {
                         </p>
                         <Button
                           onClick={() => setActiveSection('order')}
-                          className="w-full bg-accent text-primary hover:bg-accent/90"
+                          className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
                           size="lg"
                         >
                           Оформить заказ
@@ -548,7 +548,7 @@ const Index = () => {
                     </div>
                   </div>
 
-                  <Button type="submit" className="w-full bg-accent text-primary hover:bg-accent/90" size="lg">
+                  <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90" size="lg">
                     Отправить заявку
                   </Button>
                 </form>
@@ -572,24 +572,24 @@ const Index = () => {
         </div>
       )}
 
-      <footer className="bg-primary text-secondary py-12">
+      <footer className="bg-primary text-primary-foreground py-12">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">Atelier Premium</h2>
-          <p className="text-secondary/80 mb-6">
+          <h2 className="text-2xl font-bold mb-4">Точный крой</h2>
+          <p className="text-primary-foreground/80 mb-6">
             Индивидуальный пошив одежды премиум-класса с 2010 года
           </p>
           <div className="flex justify-center gap-8 mb-6">
-            <a href="#" className="text-secondary/80 hover:text-secondary transition-colors">
+            <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
               О нас
             </a>
-            <a href="#" className="text-secondary/80 hover:text-secondary transition-colors">
+            <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
               Портфолио
             </a>
-            <a href="#" className="text-secondary/80 hover:text-secondary transition-colors">
+            <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
               Контакты
             </a>
           </div>
-          <p className="text-sm text-secondary/60">© 2024 Atelier Premium. Все права защищены.</p>
+          <p className="text-sm text-primary-foreground/60">© 2024 Точный крой. Все права защищены.</p>
         </div>
       </footer>
     </div>
