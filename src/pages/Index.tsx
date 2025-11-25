@@ -266,6 +266,82 @@ const Index = () => {
               ))}
             </div>
           </section>
+
+          <section className="py-24 bg-muted">
+            <div className="container mx-auto px-4">
+              <h3 className="text-4xl font-bold text-center mb-4">Отзывы клиентов</h3>
+              <p className="text-center text-muted-foreground mb-16 text-lg">
+                Что говорят о нас наши клиенты
+              </p>
+              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <Card className="border-none shadow-lg">
+                  <CardContent className="pt-6">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-accent fill-accent" size={20} />
+                      ))}
+                    </div>
+                    <p className="text-muted-foreground mb-6 italic">
+                      "Заказывала свадебное платье. Результат превзошёл все ожидания! Мастера учли каждую деталь, платье сидело идеально. Спасибо за мой особенный день!"
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-primary font-semibold">
+                        АС
+                      </div>
+                      <div>
+                        <p className="font-semibold">Анна Соколова</p>
+                        <p className="text-sm text-muted-foreground">Москва</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-none shadow-lg">
+                  <CardContent className="pt-6">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-accent fill-accent" size={20} />
+                      ))}
+                    </div>
+                    <p className="text-muted-foreground mb-6 italic">
+                      "Пошив костюма-тройки из кашемира. Качество работы на высшем уровне, посадка безупречная. Онлайн-калькулятор помог сразу понять стоимость. Рекомендую!"
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-primary font-semibold">
+                        ДП
+                      </div>
+                      <div>
+                        <p className="font-semibold">Дмитрий Петров</p>
+                        <p className="text-sm text-muted-foreground">Санкт-Петербург</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-none shadow-lg">
+                  <CardContent className="pt-6">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-accent fill-accent" size={20} />
+                      ))}
+                    </div>
+                    <p className="text-muted-foreground mb-6 italic">
+                      "Заказала пальто на осень. Очень удобно, что можно оформить заявку онлайн. Ткань шикарная, работа выполнена аккуратно. Уже планирую следующий заказ!"
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-primary font-semibold">
+                        ЕВ
+                      </div>
+                      <div>
+                        <p className="font-semibold">Елена Волкова</p>
+                        <p className="text-sm text-muted-foreground">Казань</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
         </div>
       )}
 
