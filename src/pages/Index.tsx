@@ -233,6 +233,39 @@ const Index = () => {
               </div>
             </div>
           </section>
+
+          <section className="py-24 container mx-auto px-4">
+            <h3 className="text-4xl font-bold text-center mb-4">Наши работы</h3>
+            <p className="text-center text-muted-foreground mb-16 text-lg">
+              Примеры изделий, созданных нашими мастерами
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+              {[
+                { src: 'https://cdn.poehali.dev/projects/7be349b9-8c22-4c42-9cc2-117a459caea2/files/13dcae47-76e0-42c0-aef5-09df90616096.jpg', title: 'Вечернее платье' },
+                { src: 'https://cdn.poehali.dev/projects/7be349b9-8c22-4c42-9cc2-117a459caea2/files/c20b9afa-9253-4003-a7e0-e0e65b605d7f.jpg', title: 'Мужской костюм' },
+                { src: 'https://cdn.poehali.dev/projects/7be349b9-8c22-4c42-9cc2-117a459caea2/files/a147873f-67ff-44fd-aa4b-6df4a1fab309.jpg', title: 'Пальто' },
+                { src: 'https://cdn.poehali.dev/projects/7be349b9-8c22-4c42-9cc2-117a459caea2/files/faa70466-de59-4d7d-94c6-279b5aecadb3.jpg', title: 'Свадебное платье' },
+                { src: 'https://cdn.poehali.dev/projects/7be349b9-8c22-4c42-9cc2-117a459caea2/files/d903105a-51cd-4f48-b9b1-9245fc76aeb3.jpg', title: 'Блузка' },
+                { src: 'https://cdn.poehali.dev/projects/7be349b9-8c22-4c42-9cc2-117a459caea2/files/e6048ebd-a916-4f0f-abee-3962f7f5c427.jpg', title: 'Брюки' },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="group relative aspect-[3/4] overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer"
+                >
+                  <img
+                    src={item.src}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h4 className="text-secondary text-xl font-semibold">{item.title}</h4>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       )}
 
